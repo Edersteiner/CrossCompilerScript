@@ -1,5 +1,5 @@
 # CrossCompilerScript
-A shell script for building GCC and Binutils for use in OS Development.
+A shell script for building GCC and Binutils for use in OS Development. Based on the procedure detailed on [OSdev Wiki](https://wiki.osdev.org/GCC_Cross-Compiler)
 
 This script is made with [GevOS](https://github.com/KamalDevelopers/GevOS) in mind but should work on any Hobby OS with some tinkering.
 
