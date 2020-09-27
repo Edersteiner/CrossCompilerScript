@@ -15,6 +15,8 @@ You need to install the dependincies needed to compile GCC and Binutils, The tab
 | libmpfr-dev         | mpfr          | mpfr-devel |
 | texinfo             | ...           | texinfo |
 
+---
+
 1. clone the repo
 ```
 git clone https://github.com/Edersteiner/CrossCompilerScript
@@ -28,10 +30,11 @@ cd CrossCompilerScript
 ```
 ./CCBuild.sh
 ```
-4. Now wait for everything to compile. GCC might take up to an hour, but it probably wont take that long.
+Now wait for everything to compile. GCC might take up to an hour, but it probably wont take that long.
 
+---
 
-When it's finished you have the cross compiler located at: $HOME/opt/cross/bin/$TARGET-gcc
+When it's finished you have the cross compiler located at: `$HOME/opt/cross/bin/$TARGET-gcc`
 
 
 
@@ -39,3 +42,6 @@ you can verify that it compiled correctly by running:
 ```
 $HOME/opt/cross/bin/$TARGET-gcc --version
 ```
+---
+
+If you have any problems you are welcome to post an Issue
