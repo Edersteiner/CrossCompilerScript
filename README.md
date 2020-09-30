@@ -45,3 +45,14 @@ $HOME/opt/cross/bin/$TARGET-gcc --version
 ---
 
 If you have any problems you are welcome to post an Issue
+
+---
+
+By default, the Binutils version is 2.24 and the GCC version is 8.3.0
+
+This is because those versions work the best with [GevOS](https://github.com/KamalDevelopers/GevOS).
+
+The default architecture is i686-elf.
+
+All this can be changed at the top of the CCBuild.sh script if your hobby os needs a different or newer cross compiler.
+
