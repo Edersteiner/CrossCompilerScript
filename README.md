@@ -42,9 +42,6 @@ you can verify that it compiled correctly by running:
 ```
 $HOME/opt/cross/bin/$TARGET-gcc --version
 ```
----
-
-If you have any problems you are welcome to post an Issue
 
 ---
 
@@ -55,4 +52,9 @@ This is because those versions work the best with [GevOS](https://github.com/Kam
 The default architecture is i686-elf.
 
 All this can be changed at the top of the CCBuild.sh script if your hobby os needs a different or newer cross compiler.
+
+---
+
+If you have any problems you are welcome to post an Issue
+
 
