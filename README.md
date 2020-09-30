@@ -30,6 +30,8 @@ cd CrossCompilerScript
 ```
 ./CCBuild.sh
 ```
+You could also download the script from the releases tab and run it.
+
 Now wait for everything to compile. GCC might take up to an hour, but it probably wont take that long.
 
 ---
