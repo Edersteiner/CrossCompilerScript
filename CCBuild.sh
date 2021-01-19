@@ -16,15 +16,26 @@ tar -xzf gcc-$GCC_VERSION.tar.gz
 rm binutils-$BINUTILS_VERSION.tar.gz
 rm gcc-$GCC_VERSION.tar.gz
 
-cd binutils-$BINUTILS_VERSION
-./configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
+mkdir build-binutils
+cd build-binutils
+
+../binutils-$BINUTILS_VERSION/configure --target=$TARGET --prefix="$PREFIX" --with-sysroot --disable-nls --disable-werror
 make
 make install
 
 cd ../
 
-which -- $TARGET-as || echo $TARGET-as is not in the PATH
-cd gcc-$GCC_VERSION
-./configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-languages=c,c++ --without-headers
+mkdir build-gcc
+cd build-gcc
+
+../gcc-$GCC_VERSION/configure --target=$TARGET --prefix="$PREFIX" --disable-nls --enable-languages=c,c++ --without-headers
 make all-gcc
+make all-target-libgcc
 make install-gcc
+make install-target-libgcc
+
+cd ../../
+
+$HOME/opt/cross/bin/$TARGET-gcc --version
+
+
