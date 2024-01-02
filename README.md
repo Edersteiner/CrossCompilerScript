@@ -47,7 +47,7 @@ $HOME/opt/cross/bin/$TARGET-gcc --version
 
 ---
 
-By default, the Binutils version is 2.24 and the GCC version is 8.3.0
+By default, the Binutils version is 2.41 and the GCC version is 11.2.0
 
 This is because those versions work the best with [GevOS](https://github.com/KamalDevelopers/GevOS).
 
